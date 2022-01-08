@@ -6,9 +6,8 @@
 some_list = ['attribute', 'класс', 'функция', 'type']
 for i in some_list:
     print()
-    # some_word = eval(f"b'{i}'")
-    some_word = bytes(i, encoding='utf-8')
-    print(f'type({type(some_word)})  =>  {some_word}')
-
-# Записать возможно все слова, но их вид будет отличаться в зависимости от language (если использовать utf-8 например)
-# Но если говорить о записе через "b", то нельзя записать русские слова, т.к. ASCII не поддерживает русский язык
+    try:
+        some_word = eval(f"b'{i}'")
+        print(f'type({type(some_word)})  =>  {some_word}')
+    except SyntaxError:
+        print(f'Слово "{i}" нельзя записать в байтовом виде, т.к. байты могут содержать только буквенные символы ASCII.')
