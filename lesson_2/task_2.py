@@ -16,3 +16,32 @@
             Проверить работу программы через вызов функции write_order_to_json() с передачей в нее значений каждого
             параметра.
 """
+
+import json
+import datetime
+import pprint
+
+
+# товар (item), количество (quantity), цена (price), покупатель (buyer), дата (date)
+def write_order_to_json(item, quantity, price, buyer):
+    now_date = datetime.date.today().strftime("%d/%m/%Y")
+    params = [item, quantity, price, buyer, now_date]
+
+    with open('to_solve/orders.json') as f:
+        obj = json.load(f)
+    obj['orders'].append(params)
+
+    with open('to_solve/orders.json', 'w', encoding='utf-8') as f:
+        json.dump(obj, f, ensure_ascii=False)
+
+
+write_order_to_json('Костыль', 1, 599, 'Михаил')
+write_order_to_json('Костыль', 1, 599, 'Константин')
+with open('to_solve/orders.json') as f:
+    pprint.pprint(f.read())
+
+
+# можно выполнить очистку для других тестов с помощью кода ниже
+# initial_data = {'orders': []}
+# with open('to_solve/orders.json', 'w', encoding='utf-8') as f:
+#     json.dump(initial_data, f)

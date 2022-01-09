@@ -14,3 +14,26 @@
 
         Реализовать считывание данных из созданного файла и проверить, совпадают ли они с исходными.
 """
+
+import yaml
+import io
+import pprint
+
+
+data = {
+    'a list': ['str1', 'str2', 'str3', 'str4'],
+    'b num': 10,
+    'c dict': {
+        'param1': 'str€',
+        'param2': 'str€',
+        'param3': 13
+    }
+}
+
+
+with io.open('to_solve/data.yaml', 'w', encoding='utf8') as outfile:
+    yaml.dump(data, outfile, default_flow_style=False, allow_unicode=True)
+
+with open('to_solve/data.yaml', 'r') as stream:
+    data_loaded = yaml.safe_load(stream)
+pprint.pprint(data_loaded)

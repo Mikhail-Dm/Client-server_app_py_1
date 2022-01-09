@@ -28,7 +28,7 @@
 import csv
 
 
-def my_fun():
+def get_data():
     os_prod_list = []
     os_name_list = []
     os_code_list = []
@@ -37,15 +37,15 @@ def my_fun():
     for i in range(1, 4):
         with open(f'to_solve/info_{i}.txt', encoding='utf-8') as f_n:
             for line in f_n:
-                if_fun('Изготовитель системы', os_prod_list, line)
-                if_fun('Название ОС', os_name_list, line)
-                if_fun('Код продукта', os_code_list, line)
-                if_fun('Тип системы', os_type_list, line)
+                get_data_if_main_data('Изготовитель системы', os_prod_list, line)
+                get_data_if_main_data('Название ОС', os_name_list, line)
+                get_data_if_main_data('Код продукта', os_code_list, line)
+                get_data_if_main_data('Тип системы', os_type_list, line)
     data = [main_data, os_prod_list, os_name_list, os_code_list, os_type_list]
     return data
 
 
-def if_fun(my_str, my_list, line):
+def get_data_if_main_data(my_str, my_list, line):
     if my_str in line:
         line = line.replace(my_str, '').replace(':', '')
         line = ' '.join(line.split())
@@ -55,11 +55,11 @@ def if_fun(my_str, my_list, line):
 def write_to_csv(file_name):
     with open(f'{file_name}', 'w') as f_n:
         f_n_writer = csv.writer(f_n, quoting=csv.QUOTE_NONNUMERIC)
-        data = my_fun()
+        data = get_data()
         f_n_writer.writerows(data)
 
     with open(f'{file_name}') as f_n:
         print(f_n.read())
 
 
-write_to_csv('write_to_csv.csv')
+write_to_csv('to_solve/write_to_csv.csv')

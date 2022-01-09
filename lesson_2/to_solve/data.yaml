@@ -1,0 +1,10 @@
+a list:
+- str1
+- str2
+- str3
+- str4
+b num: 10
+c dict:
+  param1: str€
+  param2: str€
+  param3: 13
