@@ -23,16 +23,22 @@ import pprint
 
 
 # товар (item), количество (quantity), цена (price), покупатель (buyer), дата (date)
-def write_order_to_json(item, quantity, price, buyer):
-    now_date = datetime.date.today().strftime("%d/%m/%Y")
-    params = [item, quantity, price, buyer, now_date]
+def write_order_to_json(item_param, quantity_param, price_param, buyer_param):
+    date_param = datetime.date.today().strftime("%d/%m/%Y")
+    params = {
+        'item': item_param,
+        'quantity': quantity_param,
+        'price': price_param,
+        'buyer': buyer_param,
+        'date': date_param
+    }
 
     with open('to_solve/orders.json') as f:
         obj = json.load(f)
     obj['orders'].append(params)
 
     with open('to_solve/orders.json', 'w', encoding='utf-8') as f:
-        json.dump(obj, f, ensure_ascii=False)
+        json.dump(obj, f, indent=4, ensure_ascii=False)
 
 
 write_order_to_json('Костыль', 1, 599, 'Михаил')
