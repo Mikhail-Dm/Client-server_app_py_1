@@ -29,19 +29,26 @@ import csv
 
 
 def get_data():
+    data = []
     os_prod_list = []
     os_name_list = []
     os_code_list = []
     os_type_list = []
-    main_data = ['Изготовитель системы', 'Название ОС', 'Код продукта', 'Тип системы']
-    for i in range(1, 4):
+    headers = ['Изготовитель системы', 'Название ОС', 'Код продукта', 'Тип системы']
+    for i in range(1, len(headers)):
         with open(f'to_solve/info_{i}.txt', encoding='utf-8') as f_n:
             for line in f_n:
                 get_data_if_main_data('Изготовитель системы', os_prod_list, line)
                 get_data_if_main_data('Название ОС', os_name_list, line)
                 get_data_if_main_data('Код продукта', os_code_list, line)
                 get_data_if_main_data('Тип системы', os_type_list, line)
-    data = [main_data, os_prod_list, os_name_list, os_code_list, os_type_list]
+
+    data.append(headers)
+    lines = [os_prod_list, os_name_list, os_code_list, os_type_list]
+
+    for i in range(len(lines[0])):
+        line = [row[i] for row in lines]
+        data.append(line)
     return data
 
 
