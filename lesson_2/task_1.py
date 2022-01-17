@@ -36,7 +36,7 @@ def get_data():
     os_type_list = []
     headers = ['Изготовитель системы', 'Название ОС', 'Код продукта', 'Тип системы']
     for i in range(1, len(headers)):
-        with open(f'to_solve/info_{i}.txt', encoding='utf-8') as f_n:
+        with open(f'to_solve/info_{i}.txt') as f_n:
             for line in f_n:
                 get_data_if_main_data('Изготовитель системы', os_prod_list, line)
                 get_data_if_main_data('Название ОС', os_name_list, line)
