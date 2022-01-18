@@ -4,8 +4,8 @@ from socket import socket, AF_INET, SOCK_STREAM
 import sys
 import json
 from common.utils import get_message, send_message
-from common.variables import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, RESPONSE, RESPONDEFAULT_IP_ADRESSSE, ERROR, \
-    DEFAULT_PORT, DEFAULT_IP_ADRESS, MAX_CONNECTIONS
+from common.variables import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, RESPONSE, \
+    ERROR, DEFAULT_PORT, DEFAULT_IP_ADDRESS, MAX_CONNECTIONS
 
 
 
@@ -14,7 +14,7 @@ def process_client_message(message):
             message[USER][ACCOUNT_NAME] == 'Guest':
         return {RESPONSE: 200}
     return {
-        RESPONDEFAULT_IP_ADRESSSE: 400,
+        RESPONSE: 400,
         ERROR: 'Bad Request'
     }
 
@@ -39,7 +39,7 @@ def main():
         if '-a' in sys.argv:
             listen_address = sys.argv[sys.argv.index('-a') + 1]
         else:
-            listen_address = DEFAULT_IP_ADRESS
+            listen_address = DEFAULT_IP_ADDRESS
     except IndexError:
         print('После параметра -\'a\' необходимо указать прослушиваемый адрес.')
         sys.exit(1)

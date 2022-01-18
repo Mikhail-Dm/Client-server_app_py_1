@@ -5,7 +5,8 @@ import sys
 import time
 
 from socket import socket, AF_INET, SOCK_STREAM
-from common.variables import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, RESPONSE, ERROR, DEFAULT_IP_ADRESS, DEFAULT_PORT
+from common.variables import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, RESPONSE, ERROR, \
+    DEFAULT_IP_ADDRESS, DEFAULT_PORT
 from common.utils import get_message, send_message
 
 
@@ -53,7 +54,7 @@ def main():
         print('В качестве порта может быть указано только число в диапазоне от 1024 до 65535')
         sys.exit(1)
     except IndexError:
-        server_address = DEFAULT_IP_ADRESS
+        server_address = DEFAULT_IP_ADDRESS
         server_port = DEFAULT_PORT
 
     # Инициализация сокета и обмен
