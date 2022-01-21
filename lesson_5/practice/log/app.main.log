@@ -1,0 +1,9 @@
+2022-01-22 00:13:42,629 - DEBUG - server_log_config - {'action': 'presense', 'time': 'Sat Jan 22 00:13:42 2022', 'user': {'account_name': 'Guest'}} 
+2022-01-22 00:13:42,629 - DEBUG - client_log_config - 200: OK 
+2022-01-22 00:13:43,221 - DEBUG - server_log_config - {'action': 'presense', 'time': 'Sat Jan 22 00:13:43 2022', 'user': {'account_name': 'Guest'}} 
+2022-01-22 00:13:43,221 - DEBUG - server_log_config - {'action': 'presense', 'time': 'Sat Jan 22 00:13:43 2022', 'user': {'account_name': 'Guest'}} 
+2022-01-22 00:13:43,221 - DEBUG - client_log_config - 200: OK 
+2022-01-22 00:13:43,774 - DEBUG - server_log_config - {'action': 'presense', 'time': 'Sat Jan 22 00:13:43 2022', 'user': {'account_name': 'Guest'}} 
+2022-01-22 00:13:43,774 - DEBUG - server_log_config - {'action': 'presense', 'time': 'Sat Jan 22 00:13:43 2022', 'user': {'account_name': 'Guest'}} 
+2022-01-22 00:13:43,774 - DEBUG - server_log_config - {'action': 'presense', 'time': 'Sat Jan 22 00:13:43 2022', 'user': {'account_name': 'Guest'}} 
+2022-01-22 00:13:43,775 - DEBUG - client_log_config - 200: OK 
