@@ -28,9 +28,9 @@ decorator(some_func)
 # ==========================================
 # Но зато заработал вызов, который не работал в предыдущем примере!
 
-# func_with_decorator = decorator(some_func)
-# print('Тип функции func_with_decorator : ', type(func_with_decorator))
-# func_with_decorator()
+func_with_decorator = decorator(some_func)
+print('Тип функции func_with_decorator : ', type(func_with_decorator))
+func_with_decorator()
 
 # ==========================================
 # Для этого случая в Python имеется "синтаксический сахар": @decorator

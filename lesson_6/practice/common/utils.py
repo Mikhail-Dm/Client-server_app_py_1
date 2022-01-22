@@ -1,5 +1,11 @@
+import inspect
 import json
+
 from .variables import *
+from functools import wraps
+from practice.log.client_log.client_log_config import *
+from practice.log.server_log.server_log_config import *
+
 
 
 def get_message(client):
@@ -33,4 +39,12 @@ def send_message(sock, message):
     encoded_message = json_message.encode('utf-8')
     sock.send(encoded_message)
 
-    
+
+def log(func):
+    @wraps(func)
+    def call(*args, **kwargs):
+        outer_func = inspect.stack()[1][3]
+        LOGGER_S.debug(f'Функция "{func.__name__}" вызвана функцией "{outer_func}"')
+        LOGGER_C.debug(f'Функция "{func.__name__}" вызвана функцией "{outer_func}"')
+        return func(*args, **kwargs)
+    return call
