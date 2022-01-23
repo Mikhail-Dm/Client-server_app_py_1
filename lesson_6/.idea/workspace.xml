@@ -6,13 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8c48044b-d81e-4f5c-ba6a-1fcb884124d9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice/client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/common/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice/common/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/log/app.main.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/log/client_log_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice/log/client_log/client_log_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/log/server_log_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice/log/server_log/server_log_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice/server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher_files/examples/easy_deco_1_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_files/examples/easy_deco_1_2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
