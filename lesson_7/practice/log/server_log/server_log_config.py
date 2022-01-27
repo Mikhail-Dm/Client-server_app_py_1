@@ -1,30 +1,42 @@
+import os
+import sys
+
 # logging - стандартный модуль для организации логирования
 import logging.handlers
+sys.path.append('../../')
 
 
 
 # Создаем объект форматирования:
 FORMATTER = logging.Formatter("%(asctime)s - %(levelname)s - %(module)s - %(message)s ")
 
+PATH = os.path.dirname(os.path.abspath(__file__))
+PATH = os.path.join(PATH, 'server.log')
+
 # Создаем файловый обработчик логирования (можно задать кодировку):
-HANDLER = logging.handlers.TimedRotatingFileHandler(filename='log/server_log/app.server.log', when='H', interval=24,
-                                                    encoding='utf-8')
+HANDLER = logging.handlers.TimedRotatingFileHandler(
+    filename=PATH,
+    when='D',
+    interval=1,
+    encoding='utf-8'
+)
+
 HANDLER.suffix = '%Y-%m-%d'
 HANDLER.setFormatter(FORMATTER)
 
 # Создаем объект-логгер с именем app.server:
-LOGGER_S = logging.getLogger('app.server')
+LOGER = logging.getLogger('server')
 # Добавляем в логгер новый обработчик событий и устанавливаем уровень логирования
-LOGGER_S.addHandler(HANDLER)
-LOGGER_S.setLevel(logging.DEBUG)
+LOGER.addHandler(HANDLER)
+LOGER.setLevel(logging.DEBUG)
 
 
 if __name__ == '__main__':
     STREAM_HANDLER = logging.StreamHandler()
     STREAM_HANDLER.setFormatter(FORMATTER)
     STREAM_HANDLER.setLevel(logging.DEBUG)
-    LOGGER_S.addHandler(STREAM_HANDLER)
-    LOGGER_S.debug('message')
+    LOGER.addHandler(STREAM_HANDLER)
+    LOGER.debug('message')
 
     # LOGGER_S.critical('Критическая ошибка')
     # LOGGER_S.error('Ошибка')
