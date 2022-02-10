@@ -6,7 +6,7 @@ import socket
 import time
 import argparse
 import logging
-import logs.client_log.client_log_config
+import logs.config_client_log
 from common.variables import DEFAULT_PORT, DEFAULT_IP_ADDRESS, \
     ACTION, TIME, USER, ACCOUNT_NAME, SENDER, PRESENCE, RESPONSE, ERROR, MESSAGE, MESSAGE_TEXT
 from common.utils import get_message, send_message
@@ -88,7 +88,7 @@ def arg_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument('addr', default=DEFAULT_IP_ADDRESS, nargs='?')
     parser.add_argument('port', default=DEFAULT_PORT, type=int, nargs='?')
-    parser.add_argument('-m', '--mode', default='listen', nargs='?')
+    parser.add_argument('-m', '--mode', default='send', nargs='?')
     namespace = parser.parse_args(sys.argv[1:])
     server_address = namespace.addr
     server_port = namespace.port

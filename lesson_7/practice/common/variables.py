@@ -1,26 +1,30 @@
-"Константы"
+"""Константы"""
 
+import logging
 
-# Порт по умолчанию
+# Порт поумолчанию для сетевого ваимодействия
 DEFAULT_PORT = 7777
-# IP адрес по умолчанию
+# IP адрес по умолчанию для подключения клиента
 DEFAULT_IP_ADDRESS = '127.0.0.1'
 # Максимальная очередь подключений
 MAX_CONNECTIONS = 5
 # Максимальная длинна сообщения в байтах
-MAX_PACKAGE_LENGTH = 4096
+MAX_PACKAGE_LENGTH = 1024
 # Кодировка проекта
 ENCODING = 'utf-8'
+# Текущий уровень логирования
+LOGGING_LEVEL = logging.DEBUG
 
-
-# Протокол JIM основные ключи
+# Прококол JIM основные ключи:
 ACTION = 'action'
 TIME = 'time'
 USER = 'user'
 ACCOUNT_NAME = 'account_name'
+SENDER = 'sender'
 
 # Прочие ключи, используемые в протоколе
-PRESENCE = 'presense'
+PRESENCE = 'presence'
 RESPONSE = 'response'
 ERROR = 'error'
-RESPONDEFAULT_IP_ADRESSSE = 'respondefault_ip_adressse'
+MESSAGE = 'message'
+MESSAGE_TEXT = 'mess_text'

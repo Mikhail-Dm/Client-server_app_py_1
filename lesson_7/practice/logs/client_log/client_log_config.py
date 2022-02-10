@@ -13,7 +13,7 @@ PATH = os.path.dirname(os.path.abspath(__file__))
 PATH = os.path.join(PATH, 'client.log')
 
 # Создаем файловый обработчик логирования (можно задать кодировку):
-FILE_HANDLER = logging.FileHandler(PATH)
+FILE_HANDLER = logging.FileHandler(filename=PATH, encoding='utf-8')
 # FILE_HANDLER = logging.FileHandler('client.log')
 FILE_HANDLER.setFormatter(FORMATTER)
 FILE_HANDLER.setLevel(logging.DEBUG)

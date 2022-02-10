@@ -2,9 +2,9 @@
 
 import json
 import sys
-from lesson_7.practice.common.variables import MAX_PACKAGE_LENGTH, ENCODING
-from lesson_7.practice.errors import IncorrectDataRecivedError, NonDictInputError
-from lesson_7.practice.decos import log
+from practice.common.variables import MAX_PACKAGE_LENGTH, ENCODING
+from practice.errors import IncorrectDataRecivedError, NonDictInputError
+from practice.decos import log
 sys.path.append('../')
 
 

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ae7d5fe5-161c-4b5a-ad69-d77434dd3e62" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/practice/logs/client_log/client.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/logs/server_log/server.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/lesson_7.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lesson_7.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_test/01_time_server_select.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_test/02_time_client_random.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_test/03_start_clients.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_test/04_echo_server_select.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_test/05_echo_client_select.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/common/client.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/common/variables.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/decos.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice/decos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/log/client_log/client.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/log/client_log/client_log_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice/logs/client_log/client_log_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/log/server_log/server.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/log/server_log/server_log_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice/logs/server_log/server_log_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/testi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher_files/Урок 7. Пример выполнения ДЗ/practice/common/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_files/Урок 7. Пример выполнения ДЗ/practice/common/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher_files/Урок 7. Пример выполнения ДЗ/practice/launcher_mac.py" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_files/Урок 7. Пример выполнения ДЗ/practice/launcher_mac.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher_files/Урок 7. Пример выполнения ДЗ/practice/launcher_ubuntu.py" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_files/Урок 7. Пример выполнения ДЗ/practice/launcher_ubuntu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher_files/Урок 7. Пример выполнения ДЗ/practice/logs/client.log" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_files/Урок 7. Пример выполнения ДЗ/practice/logs/client.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher_files/Урок 7. Пример выполнения ДЗ/practice/logs/config_client_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_files/Урок 7. Пример выполнения ДЗ/practice/logs/config_client_log.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher_files/Урок 7. Пример выполнения ДЗ/practice/logs/config_server_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_files/Урок 7. Пример выполнения ДЗ/practice/logs/config_server_log.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher_files/Урок 7. Пример выполнения ДЗ/practice/logs/server.log" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_files/Урок 7. Пример выполнения ДЗ/practice/logs/server.log" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="24uVLUR5JyCDwYugFHBgqNRhZv9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/practice" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\smyll\Desktop\Training\Reposit\Client-server_app_py_1\lesson_7\practice" />
+      <recent name="C:\Users\smyll\Desktop\Training\Reposit\Client-server_app_py_1\lesson_7\practice\common" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.launcher">
+    <configuration name="client" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lesson_7" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practice" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practice/client.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="launcher" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lesson_7" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practice" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practice/launcher.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="my_client" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lesson_7" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practice" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practice/my_client.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="my_server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lesson_7" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practice" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practice/my_server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="server (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lesson_7" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practice" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practice/server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.launcher" />
+        <item itemvalue="Python.my_server" />
+        <item itemvalue="Python.my_client" />
+        <item itemvalue="Python.server (1)" />
+        <item itemvalue="Python.client" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ae7d5fe5-161c-4b5a-ad69-d77434dd3e62" name="Changes" comment="" />
+      <created>1644480402584</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1644480402584</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
