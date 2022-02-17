@@ -1,36 +1,43 @@
+"""Утилиты"""
+
+import sys
 import json
+from lesson_8.practice.common.variables import MAX_PACKAGE_LENGTH, ENCODING
+from lesson_8.practice.errors import IncorrectDataRecivedError, NonDictInputError
+from lesson_8.practice.decos import log
 
-from .variables import *
 
-
-
+@log
 def get_message(client):
     """
-    Принимает сообщение, декодирует, конвертирует в словарь
+    Утилита приёма и декодирования сообщения принимает байты выдаёт словарь,
+    если приняточто-то другое отдаёт ошибку значения
     :param client:
-    :return response:
+    :return:
     """
-
     encoded_response = client.recv(MAX_PACKAGE_LENGTH)
     if isinstance(encoded_response, bytes):
         json_response = encoded_response.decode(ENCODING)
         response = json.loads(json_response)
         if isinstance(response, dict):
             return response
-        raise ValueError
-    raise ValueError
+        else:
+            raise IncorrectDataRecivedError
+    else:
+        raise IncorrectDataRecivedError
 
 
+@log
 def send_message(sock, message):
     """
-    Принимает словарь и отправляет его
+    Утилита кодирования и отправки сообщения
+    принимает словарь и отправляет его
     :param sock:
     :param message:
     :return:
     """
-
     if not isinstance(message, dict):
-        raise TypeError
-    json_message = json.dumps(message)
-    encoded_message = json_message.encode('utf-8')
+        raise NonDictInputError
+    js_message = json.dumps(message)
+    encoded_message = js_message.encode(ENCODING)
     sock.send(encoded_message)

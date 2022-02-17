@@ -15,18 +15,9 @@ from common.utils import get_message, send_message
 from errors import IncorrectDataRecivedError, ReqFieldMissingError, ServerError
 from decos import log
 
+
 # Инициализация клиентского логера
 LOGGER = logging.getLogger('client')
-
-
-@log
-def create_exit_message(account_name):
-    """Функция создаёт словарь с сообщением о выходе"""
-    return {
-        ACTION: EXIT,
-        TIME: time.time(),
-        ACCOUNT_NAME: account_name
-    }
 
 
 @log
@@ -50,6 +41,16 @@ def message_from_server(sock, my_username):
                 ConnectionResetError, json.JSONDecodeError):
             LOGGER.critical(f'Потеряно соединение с сервером.')
             break
+
+
+@log
+def create_exit_message(account_name):
+    """Функция создаёт словарь с сообщением о выходе"""
+    return {
+        ACTION: EXIT,
+        TIME: time.time(),
+        ACCOUNT_NAME: account_name
+    }
 
 
 @log
