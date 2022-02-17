@@ -7,7 +7,7 @@ import time
 import argparse
 import logging
 import threading
-import logs.config_client_log
+import logs.client_log_config
 from common.variables import DEFAULT_PORT, DEFAULT_IP_ADDRESS, ACTION, \
     TIME, USER, ACCOUNT_NAME, SENDER, PRESENCE, RESPONSE, \
     ERROR, MESSAGE, MESSAGE_TEXT, DESTINATION, EXIT

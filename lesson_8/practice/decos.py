@@ -2,8 +2,6 @@
 
 import sys
 import logging
-import logs.server_log.server_log_config
-import logs.client_log.client_log_config
 
 # метод определения модуля, источника запуска.
 # Метод find () возвращает индекс первого вхождения искомой подстроки,

@@ -5,10 +5,8 @@ import socket
 import argparse
 import logging
 import select
-import logs.server_log.server_log_config
-from common.variables import DEFAULT_PORT, MAX_CONNECTIONS, ACTION, TIME, \
-    USER, ACCOUNT_NAME, SENDER, PRESENCE, ERROR, MESSAGE, \
-    MESSAGE_TEXT, RESPONSE_400, DESTINATION, RESPONSE_200, EXIT
+from common.variables import DEFAULT_PORT, MAX_CONNECTIONS, ACTION, TIME, USER, ACCOUNT_NAME, SENDER, PRESENCE, \
+    ERROR, MESSAGE, MESSAGE_TEXT, RESPONSE_400, DESTINATION, RESPONSE_200, EXIT, MAX_PACKAGE_LENGTH, ENCODING
 from common.utils import get_message, send_message
 from decos import log
 

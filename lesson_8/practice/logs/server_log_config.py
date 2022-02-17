@@ -3,7 +3,7 @@ import sys
 
 # logging - стандартный модуль для организации логирования
 import logging.handlers
-sys.path.append('../../')
+sys.path.append('../')
 
 
 

@@ -2,9 +2,9 @@
 
 import sys
 import json
-from lesson_8.practice.common.variables import MAX_PACKAGE_LENGTH, ENCODING
-from lesson_8.practice.errors import IncorrectDataRecivedError, NonDictInputError
-from lesson_8.practice.decos import log
+from practice.common.variables import MAX_PACKAGE_LENGTH, ENCODING
+from practice.errors import IncorrectDataRecivedError, NonDictInputError
+from practice.decos import log
 
 
 @log
